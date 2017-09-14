@@ -1,0 +1,81 @@
+
+<html style="background-color:orange">
+    <head>
+        <h1>Registration Form</h1>
+    </head>
+    <body>
+    <div class="form-wrap">
+       
+        <div class="tabs">
+                <h3 class="signup-tab"><a class="active" href="#signup">Sign Up</a></h3>
+                <h3 class="login-tab"><a href="#login">Login</a></h3>
+            </div><!--.tabs-->
+
+        <div style="color:yellow" id="signup" class="tab-content" >
+            <div id="signup">
+                <form action=" " method="post" onsubmit="return clickonsubmit()"   >
+                    <div class="form-wrap">
+                    <label><b>Enter a Name</b></label>
+                    <input type="text" id="t1" name="Name" value="ki" />  <br /><br />
+                    </div> 
+
+                    <div class="form-wrap">
+                    <label><b>Enter a Address</b></label> 
+                    <input type="Address" id="t2"  name="Address" value="hyd" />  <br /><br />
+                    </div>
+
+                    <div class="form-wrap">
+                    <label><b>Enter a Phone number</b></label> 
+                    <input type="number" id="t3"  name="Phone" value="1" />  <br /><br />
+                    </div>
+
+                    <div class="form-wrap">
+                    <label><b>Enter a email</b></label> 
+                    <input type="text" id="t4"  name="Email" value="a@gmail.com" />  <br /><br />
+                    </div>
+
+                    <div class="form-wrap">
+                    <label><b>Enter Password</b></label> 
+                    <input type="Password" id="t5"  name="pwd" value="********" />  <br /><br />
+                    </div>
+
+                    <div class="form-wrap">
+                    <label><b>Select Gender</b></label> 
+                    Male: <input type="radio" id="t6"  name="radio" />  
+                    Female: <input type="radio" id="t7"  name="radio" />  <br /><br />
+                    </div>
+
+                    <div class="form-wrap">
+                    <label><a href="#">Terms & Conditions</a></label> 
+                    <input type="checkbox" id="t6"  name="checkbox"  />  <br /><br />
+                    </div>
+                    <input type="submit" value="submit"/>
+                </form>
+            </div>
+        </div>
+        <div style="color:red" id="login" class="tab-content" >
+            <div id="login">
+                <form action="#"  method="post" onsubmit="return clickonlogin()" >
+                    <div class="form-wrap">
+                    <label><b>Enter a email</b></label> 
+                    <input type="text" id="t4"  name="Email" value="a@gmail.com" />  <br /><br />
+                    </div>
+
+                    <div class="form-wrap">
+                    <label><b>Enter Password</b></label> 
+                    <input type="Password" id="t5"  name="pwd" value="********" />  <br /><br />     
+                    </div>    
+                </form>
+            </div>
+        </div>
+ </div>
+        <script  src="formValidationsJs.js">
+          
+        </script>
+        <script type="tex/Javascript" src="js">
+           
+        </script>
+
+
+    </body>
+</html>

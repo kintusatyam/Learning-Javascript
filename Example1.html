@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+
+<p id="demo"></p>
+<button type="button" onclick='document.getElementById("demo").innerHTML="Hello"'>Click me!</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+<input type="button" onclick='document.getElementById("demo").innerHTML="Hello"' value="clickme"/> 
+<script>
+function myFunction(p1, p2) {
+    return p1 * p2;
+}
+//document.getElementById("demo").innerHTML = myFunction(27, 37);
+ document.write( myFunction(10,20));
+
+</script>
+
+</body>
+</html>

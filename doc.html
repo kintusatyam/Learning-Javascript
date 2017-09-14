@@ -1,0 +1,33 @@
+<html>
+<head>
+
+</head>
+<body>
+    <p id="pid" >Paragraph value</p>
+    <h1 id="hid"> header value</h1>
+    <h4>Onfocus and onblur</h4>
+    <input type="text" id="txt1" onfocus="focusr()" /><br />
+    <input type="text" id="txt2"  onblur="blurr()"  /><br />
+    <h4>onclick events</h4>
+    <input type="button" id="txt3" value="click" onclick="clickonbutton()" /><br />
+    <select id="sel"  onchange="Change()"><br />
+        <option value="--">--select--</option>
+        <option value="Jan">January</option>
+        <option value="Feb">febuary</option>
+        <option value="Nov">November</option>
+    </select>
+    <form>
+        <label><b>Enter a Name</b></label>
+        <input type="text" id="t1" name="Name" />  
+        <label><b>Enter a Address</b></label> 
+        <input type="text" id="t2"  name="Address" /> 
+        <input type="submit" onsubmit="clickonsubmit()" /><br />
+    </form>
+    
+    <script src="doc.js" language="JavaScript">
+
+       
+    </script>
+
+</body>
+</html>

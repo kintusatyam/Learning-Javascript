@@ -1,0 +1,60 @@
+<html>
+    <head>
+       <link type="text/css" href="form1css.css" rel="stylesheet" >
+    </head>
+    <body>
+
+        <div class="form-wrap">
+            <div class="tabs">
+                <h3 class="signup tab"><a class="active" href="#signup-tab-content">Sign up</a></h3>
+                    <h3 class="login tab"><a href="#login-tab-content">login</a></h3>
+            </div>   
+
+            <div class="tab-content">
+                <h1>Sign Up</h1>
+                <div class="active" id="signup-tab-content" >
+                    <form class="signup-form" action="" method="POST">
+                            <label><b>Enter a Name</b></label>
+                            <input type="text" class="input" id="user_name" autocomplete="off" placeholder="Username"><br /><br />
+                            <label><b>Enter a Email</b></label>   
+                            <input type="email" class="input" id="user_email" autocomplete="off" placeholder="Email"><br /><br />
+                            <label><b>Enter a Password</b></label>
+                            <input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password"><br /><br />
+                            <label><b>Select Gender</b></label> 
+                            Male: <input type="radio" id="t6"  name="radio" />  
+                            Female: <input type="radio" id="t7"  name="radio" />  <br /><br />                           
+                            <input type="submit" class="button" value="Sign Up">   
+                    </form>
+                    <div class="help-text">
+                            <p>By signing up, you agree to our</p>
+                            <p><a href="#">Terms of service</a></p>
+                            <input type="checkbox" id="t6"  name="checkbox"  />  <br /><br />
+                        </div><!--.help-text-->
+                </div><!--.signup-tab-content-->
+                
+            </div>
+
+            <div class="tab-content">
+                <h1>Login</h1>
+                <form class="login-form" action="login-tab-content">
+                        <label><b>Enter a Email</b></label>   
+                        <input type="email" class="input" id="user_email" autocomplete="off" placeholder="Email"><br /><br />
+                        <label><b>Enter a Password</b></label>
+                        <input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password"><br /><br />
+                        <input type="submit" class="button" value="Login">
+                </form>
+                <div class="help-text">
+                        <p>By signing up, you agree to our</p>
+                        <p><a href="#">Terms of service</a></p>
+                        <input type="checkbox" id="t6"  name="checkbox"  />  <br /><br />
+                </div><!--.help-text-->
+            </div><!--login close-->
+          
+        </div><!--form-->
+        <script type="text/Javascript" src="formValidationsJs.js">
+        </script>
+        <script type="text/Javascript" src="jquery.js">
+        </script>
+
+    </body>
+</html>

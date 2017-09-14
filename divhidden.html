@@ -1,0 +1,47 @@
+<html><p style="padding-top:20px">
+    <a href="javascript:unhide('link', 'about')" class="button">This is a link</a><br><br>
+    <a href="javascript:unhide('about', 'link')" class="button">About</a>
+</p>
+<body>
+        <div id="about" class="hidden">
+        <div class="content3">
+        <p>This is the about section.</p>
+        <p>It is currently still being worked on.</p>
+        </div>
+        </div>
+        <input type="button" onclick="unhide(this, 'about') " value="unhide">
+</body>
+</html>
+<style>
+.hidden{
+    display:none;
+}
+
+.unhidden{
+    display:block;
+}
+</style>
+<script type="text/javascript">
+function unhide(clickedButton, divID) {
+var item = document.getElementById(divID);
+if (item) {
+    if(item.className=='hidden'){
+        item.className = 'unhidden' ;
+        clickedButton.value = 'hide'
+    }else{
+        item.className = 'hidden';
+        clickedButton.value = 'unhide'
+    }
+}}
+
+</script>
+<!--<script type="text/javascript">
+    function unhide(divID, otherDivId) {
+    var item = document.getElementById(divID);
+    if (item) {
+            item.className=(item.className=='hidden')?'unhidden':'hidden';
+        }
+        document.getElementById(otherDivId).className = 'hidden';
+    }
+</script>-->
+

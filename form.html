@@ -1,0 +1,42 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="#" method="post" onsubmit="clickonsubmit()" >
+        <label><b>Enter a Name</b></label>
+        <input type="text" id="t1" name="Name" />  
+        <label><b>Enter a Address</b></label> 
+        <input type="Address" id="t2"  name="Address" /> 
+        <label><b>Enter a Phone number</b></label> 
+        <input type="number" id="t3"  name="Phone" /> 
+        <input type="submit"/><br />
+        </form>
+       
+        <!--<label>Your input: </label>
+        <p><span id='display'></span></p>-->
+        <script language="JavaScript">
+            function clickonsubmit(){
+              // DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200')
+                var a;
+                var selvalue1 = document.getElementById("t1").value;
+            
+                 //document.write(selvalue1);
+                 var selvalue2 = document.getElementById("t2").value;
+                
+                // document.write(selvalue2);
+                 var selvalue3 = document.getElementById("t3").value;
+                 
+                // document.write(selvalue3);
+               
+               
+                 message = "<ul><li><b>NAME: </b>" + selvalue1;
+                           message += "<li><b>ADDRESS: </b>" + selvalue2;
+                           message += "<li><b>PHONE: </b>" + selvalue3 + "</ul>";
+                document.write(message);
+            }
+
+        </script>
+
+    </body>
+</html>

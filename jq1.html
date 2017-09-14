@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>First JQuery program</title>
+        <script type="text/Javascript" src="jq.js">
+        </script>
+        <script>
+        $(document).ready(function(){
+            $("#hide_id").click(function(){
+                $("#pid,#pid1").hide();
+            });
+            $("#show_id").click(function(){
+                $("#pid,#pid1").show();
+            });
+            $("#slideUp_id").click(function(){
+                $("#div_id").slideUp("slow");
+            });
+            $("#slidedown_id").click(function(){
+                $("#div_id").slideDown("slow");
+            });
+            $("#fadein_id").click(function(){
+                $("#fade_id,#fadeot_id").fadeIn("slow");
+            });
+            $("#fadeout_id").click(function(){
+                $("#fadeot_id,#fade_id").fadeOut("slow");
+            });
+            
+        });
+        </script>
+    </head>
+    <body>
+        <p id="pid">Note: Dont scare by looking my photo</p>
+        <p id="pid1">1 2 3 here we go...</p>
+        <div id="div_id">
+        <h1>hello,this is veena look at my lipstick</h1>
+        </div>
+        <marquee>Take care of your health</marquee>
+        <marquee direction = "up">The direction of text will be from bottom to top.</marquee>
+
+       
+        <h3 id="fade_id">Im fadein tag</h3>
+        <h3 id="fadeot_id">im fadeout tag</h3>
+        
+        <input type="button" value="hide" id="hide_id" />
+        <input type="button" value="show" id="show_id" />
+        <input type="button" value="slideup" id="slideUp_id" />
+        <input type="button" value="slidedown" id="slidedown_id" />
+        <input type="button" value="fadein" id="fadein_id" />
+        <input type="button" value="fadeout" id="fadeout_id" />
+    </body>
+</html>
+<style>
+    p {
+        color: blue;
+        border: 20px solid green;
+    }
+    input {
+        color: plum;
+       
+    }
+    div {
+        color: white;
+        margin: 20px;
+        height: 80px;
+        width: 80px;
+        background-image: url('image1.png');
+        
+    }
+    h3 {
+        font-size: 70px;
+        font-style: italic;
+        color: aqua;
+    }
+    </style>
